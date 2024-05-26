@@ -1,4 +1,31 @@
-# Pricing grid
+# Frontend Mentor - Single price grid component
 
-> *This is just a simple responsive pricing grid component. This project is aimed at strengthening my knowledge of tailwind...simply using the fundamentals I have learnt to try my hands on something...*
+![Design preview for the Single price grid component coding challenge](./design/desktop-preview.jpg)
 
+## Welcome! 👋
+
+## Table of contents
+
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+### Links
+
+- solution URL - [daem-testimonials-grid-solution]()
+- Live Site URL: [daem-testimonials-grid-live]()
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+
+## Author
+
+- Frontend Mentor - [daem007](https://www.frontendmentor.io/profile/DAEM007)
+- Twitter - [daem007](https://www.twitter.com/daem007)
+
+## Acknowledgments
+
+> _PS: I want to cease this opportunity to appreciate Frontend mentor for providing a platform to practice._

@@ -13,8 +13,8 @@
 
 ### Links
 
-- solution URL - [daem-testimonials-grid-solution]()
-- Live Site URL: [daem-testimonials-grid-live]()
+- solution URL - [daem-testimonials-grid-solution](https://github.com/DAEM007/price-grid-tailwind)
+- Live Site URL: [daem-testimonials-grid-live](https://price-grid-tailwind.vercel.app/)
 
 ### Built with
 

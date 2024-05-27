@@ -35,14 +35,15 @@ body {
 }
 
 .price-grid-section-wrapper {
-  max-width: 500px;
   padding-inline: 1.5rem;
   display: flex;
   flex-direction: column;
 }
 
 .price-grid-section-wrapper .price-grid-section-cards {
+  max-width: 600px;
   border-radius: 0.3rem;
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* === shared styles start === */
@@ -73,6 +74,7 @@ body {
 
 .community-wrapper .community-description {
   color: var(--grayish-blue);
+  line-height: 1.5rem;
 }
 
 .price-grid-section-wrapper .subscription-and-why-wrapper {
@@ -91,6 +93,28 @@ body {
   color: var(--light-gray);
 }
 
+.subscription-wrapper .subscription-price .price-digit,
+.subscription-wrapper .subscription-price .subscription-text {
+  color: var(--light-gray);
+}
+
+.subscription-wrapper .subscription-price .price-digit,
+.subscription-wrapper .subscription-price .price-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.subscription-wrapper .subscription-price .price-digit {
+  font-size: 2rem;
+  font-weight: var(--font-700);
+  margin-right: 0.3rem;
+}
+
+.subscription-wrapper .subscription-price .price-text {
+  color: var(--light-gray-light);
+  font-weight: 300;
+}
+
 .subscription-wrapper .subscription-price .subscription-text {
   margin-top: 10px;
 }
@@ -99,10 +123,12 @@ body {
   background: var(--bright-yellow-primary);
   color: var(--light-gray);
   font-weight: var(--font-700);
+  margin-top: 0.5rem;
   padding: 1rem;
   outline: none;
   border: none;
   border-radius: 0.3rem;
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.1);
 }
 
 .subscription-and-why-wrapper .why-us-wrapper {
@@ -115,13 +141,17 @@ body {
   border-bottom-right-radius: 0.5rem;
 }
 
+.why-us-wrapper .reasons {
+  line-height: 1.3rem;
+}
+
 .why-us-wrapper .reason {
-  font-weight: var(--font-400);
+  font-weight: 300;
   color: var(--light-gray-light);
 }
 
 .attribution {
-  margin-block: 4rem;
+  margin-block: 2rem;
   font-size: 11px;
   text-align: center;
 }
@@ -137,5 +167,10 @@ body {
 
   .price-grid-section-wrapper .subscription-and-why-wrapper {
     flex-direction: row;
+  }
+
+  .subscription-and-why-wrapper .subscription-wrapper,
+  .subscription-and-why-wrapper .why-us-wrapper {
+    width: 50%;
   }
 }

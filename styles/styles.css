@@ -11,8 +11,10 @@
 /* variables */
 :root {
   --cyan-primary: hsl(179, 62%, 43%);
+  --cyan-light-primary: hsl(179, 39%, 55%);
   --bright-yellow-primary: hsl(71, 73%, 54%);
   --light-gray: hsl(204, 43%, 93%);
+  --light-gray-light: hsl(204, 88%, 91%);
   --grayish-blue: hsl(218, 22%, 67%);
   --font-body: 16px;
   --font-400: 400;
@@ -22,8 +24,100 @@
 /* mobile styles */
 html,
 body {
+  background: var(--grayish-blue);
   font-family: "Karla", sans-serif;
   font-size: var(--font-body);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.price-grid-section-wrapper {
+  max-width: 500px;
+  padding-inline: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-grid-section-wrapper .price-grid-section-cards {
+  border-radius: 0.3rem;
+}
+
+/* === shared styles start === */
+.price-grid-section-wrapper .community-wrapper,
+.subscription-and-why-wrapper .subscription-wrapper,
+.subscription-and-why-wrapper .why-us-wrapper {
+  padding: 1.5rem;
+}
+/* === shared styles end === */
+
+.price-grid-section-wrapper .community-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: var(--light-gray);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.community-wrapper .community-header {
+  color: var(--cyan-primary);
+}
+
+.community-wrapper .community-sub-text {
+  color: var(--bright-yellow-primary);
+  font-weight: var(--font-700);
+}
+
+.community-wrapper .community-description {
+  color: var(--grayish-blue);
+}
+
+.price-grid-section-wrapper .subscription-and-why-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription-and-why-wrapper .subscription-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--cyan-primary);
+}
+
+.subscription-wrapper .subscription-header {
+  color: var(--light-gray);
+}
+
+.subscription-wrapper .subscription-price .subscription-text {
+  margin-top: 10px;
+}
+
+.subscription-wrapper .sign-up-btn {
+  background: var(--bright-yellow-primary);
+  color: var(--light-gray);
+  font-weight: var(--font-700);
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.subscription-and-why-wrapper .why-us-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--cyan-light-primary);
+  color: var(--light-gray);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.why-us-wrapper .reason {
+  font-weight: var(--font-400);
+  color: var(--light-gray-light);
 }
 
 .attribution {
@@ -36,3 +130,12 @@ body {
 }
 
 /* desktop styles */
+@media (min-width: 768px) {
+  .price-grid-section-wrapper {
+    margin-inline: auto;
+  }
+
+  .price-grid-section-wrapper .subscription-and-why-wrapper {
+    flex-direction: row;
+  }
+}
